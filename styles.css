@@ -26,6 +26,10 @@ h2 {
     text-align: center;
 }
 
+p {
+    font-size: 18px;
+}
+
 .container5 {
     max-width: 1200px;
     margin: 0 auto;
@@ -330,11 +334,14 @@ footer .footer-nav a:hover {
 
 footer p {
     margin: 0;
+    color: #ffffff;
+    font-size: 18px;
 }
 
 footer .copyright {
     margin-left: auto;
     padding-top: 20px;
+    font-size: 15px;
 }
 
 .image-container {
