@@ -67,4 +67,21 @@ function toggleNav() {
        });
    });
 
+   let readMoreButton8 = document.querySelectorAll('.compbtn');
+   
+   readMoreButton8.forEach(button => {
+       button.addEventListener("click", function() {
+           window.location.href = "company.html";
+       });
+   });
+
+   let readMoreButton9 = document.querySelectorAll('.tbtn');
+   
+   readMoreButton9.forEach(button => {
+       button.addEventListener("click", function() {
+           window.location.href = "team.html";
+       });
+   });
+
+
    
