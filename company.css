@@ -16,11 +16,8 @@
 
 .company p {
     text-align: center;
-}
-
-/* Default font for paragraphs */
-p {
     font-family: 'Franklin Gothic Book', sans-serif;
+    font-size: 20px;
 }
 
 /* Default font for headings */
