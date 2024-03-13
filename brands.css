@@ -58,20 +58,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px auto;
-    max-width: 1200px;
+    margin: 10px auto;
+    max-width: 1600px;
   }
   
   .image-container3 a {
-    flex-basis: calc(20% - 10px);
+    flex-basis: calc(25% - 10px);
     margin-bottom: 5px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 60px;
     text-decoration: none;
   }
   
   .image-container3 img {
-    width: 100%;
+    width: 110%;
     height: 90%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -116,7 +117,7 @@ button:hover {
       max-height: 30vh; 
   }
       /* Adjust image container */
-    .image-container3 a {
+      .image-container3 a {
         flex-basis: calc(50% - 20px);
         margin-right: 10px;
         margin-left: 10px;
