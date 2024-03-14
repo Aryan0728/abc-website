@@ -1,0 +1,21 @@
+
+.containerW {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  
+  .paragraph {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .divider {
+    border-right: 2px solid #ccc;
+    height: 170px; /* Adjust height as needed */
+  }
+  h1 {
+    margin-top: 20px; 
+    margin-bottom: 0px;
+  }
