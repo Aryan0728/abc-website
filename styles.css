@@ -17,6 +17,7 @@ h1 {
     font-size: 50px;
     color: #05085d;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
 }
 
@@ -32,8 +33,8 @@ p {
 
 .container5 {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 15px;
+    margin-top: -50px;
 }
 
 .row {
@@ -174,7 +175,6 @@ p {
 .featured-promotions {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
     height: 300px;
 }
 
