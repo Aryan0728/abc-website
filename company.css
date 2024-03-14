@@ -35,11 +35,17 @@ h1 {
 }
 
 .image-container2 img {
-    width: calc(33.33% - 10px); /* Adjust the width and margins for responsiveness */
+    width: calc(50% - 10px); /* Adjust the width and margins for responsiveness */
     height: auto;
     cursor: pointer;
-    margin: 20px 0; /* Adjust margin for responsiveness */
+    margin-bottom: 20px; /* Adjust margin for responsiveness */
     transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.image-container2 img:nth-child(3),
+.image-container2 img:nth-child(4),
+.image-container2 img:nth-child(5) {
+    width: calc(33.33% - 10px); /* Adjust width for the three images on the first line */
 }
 
 .image-container2 img:hover {
@@ -47,7 +53,8 @@ h1 {
 }
 
 /* Remove margin from last image in a row */
-.image-container2 img:last-child {
+.image-container2 img:nth-child(3),
+.image-container2 img:nth-child(5) {
     margin-right: 0;
 }
 
@@ -57,8 +64,13 @@ h1 {
         width: 90%; /* Adjust the width for smaller screens */
         font-size: 18px; /* Adjust font size for smaller screens */
     }
-    
+
     .image-container2 img {
-        width: calc(50% - 10px); /* Adjust image width for smaller screens */
+        width: 100%; /* Single image per row */
+    }
+
+    .image-container2 img:nth-child(1),
+    .image-container2 img:nth-child(2) {
+        width: calc(50% - 10px); /* Two images side by side */
     }
 }
