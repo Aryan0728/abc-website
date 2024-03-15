@@ -22,7 +22,7 @@
 
 /* Default font for headings */
 h1 {
-    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+    font-family: 'Papyrus', 'Comic Sans MS', sans-serif;
 }
 
 /* Image container */
@@ -56,6 +56,22 @@ h1 {
 .image-container2 img:nth-child(3),
 .image-container2 img:nth-child(5) {
     margin-right: 0;
+}
+
+.image-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.image-container4 img {
+    width: calc(50% - 10px); /* Adjust the width and margins for responsiveness */
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust margin for responsiveness */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
 }
 
 /* Media query for smaller screens */
