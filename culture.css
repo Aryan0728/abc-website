@@ -19,3 +19,23 @@
     margin-top: 20px; 
     margin-bottom: 0px;
   }
+
+/* Image container */
+.image-container5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.image-container5 img {
+  width: calc(15% - 10px); /* Adjust the width and margins for responsiveness */
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 20px; /* Adjust margin for responsiveness */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+.image-container5 img:hover {
+  transform: scale(1.1); /* Scale the image by 10% on hover */
+}
