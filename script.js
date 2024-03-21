@@ -83,5 +83,18 @@ function toggleNav() {
        });
    });
 
-
+   let readMoreButton10 = document.querySelectorAll('.hbtn');
    
+   readMoreButton10.forEach(button => {
+       button.addEventListener("click", function() {
+           window.location.href = "healthndbeau.html";
+       });
+   });
+
+   let readMoreButton11 = document.querySelectorAll('.cubtn');
+   
+   readMoreButton11.forEach(button => {
+       button.addEventListener("click", function() {
+           window.location.href = "culture.html";
+       });
+   });
