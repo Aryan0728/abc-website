@@ -1,0 +1,129 @@
+.containerI {
+  text-align: center;
+  margin-top: 5vw; 
+}
+
+.contentI {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw; 
+  margin: 0 auto;
+}
+
+.content-left,
+.content-right,
+.image-right,
+.image-left {
+  flex: 1;
+  padding: 5px; 
+  text-align: center;
+}
+
+.contentI img {
+  max-width: 100%;
+  height: auto;
+  max-height: 40vh; 
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+  .product {
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 50%; 
+    height: 110%; 
+    border-radius: 6px;
+  }
+  
+  .product-text {
+    margin-top: 10px;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }  
+
+  .image-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 1400px;
+  }
+  
+  .image-container3 a {
+    flex-basis: calc(25% - 10px);
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+  }
+  
+  .image-container3 img {
+    width: 105%;
+    height: 90%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container3 img:hover {
+    transform: scale(1.1);
+  }
+  
+button {
+    padding: 10px 20px;
+    background-color: #05085d;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #db0909;
+}
+
+@media only screen and (max-width: 768px) {
+  .containerI {
+      margin-top: 10px;
+  }
+
+  .content-left,
+  .content-right,
+  .image-right,
+  .image-left {
+      flex: 1 100%;
+      padding: 5px; 
+  }
+
+  .contentI {
+      max-width: 90vw; 
+  }
+
+  .contentI img {
+      max-height: 30vh; 
+  }
+    /* Adjust image container */
+    .image-container3 a {
+      flex-basis: calc(50% - 20px);
+      margin-right: 15px;
+      margin-left: 5px;
+  }
+  .button-container {
+    padding-right: 0;
+    width: 100%; 
+}
+}

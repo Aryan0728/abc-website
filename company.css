@@ -1,0 +1,93 @@
+/* Font Face for Franklin Gothic Book */
+@font-face {
+    font-family: 'Franklin Gothic Book';
+    src: url('path/to/franklin-gothic-book.woff2') format('woff2'),
+         url('path/to/franklin-gothic-book.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General styles */
+.company {
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; 
+}
+
+.company p {
+    text-align: center;
+    color: #424040;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    font-size: 20px;
+}
+
+/* Default font for headings */
+h1 {
+    font-family: 'Papyrus', 'Comic Sans MS', sans-serif;
+}
+
+/* Image container */
+.image-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.image-container2 img {
+    width: calc(50% - 10px); /* Adjust the width and margins for responsiveness */
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust margin for responsiveness */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.image-container2 img:nth-child(3),
+.image-container2 img:nth-child(4),
+.image-container2 img:nth-child(5) {
+    width: calc(33.33% - 10px); /* Adjust width for the three images on the first line */
+}
+
+.image-container2 img:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
+/* Remove margin from last image in a row */
+.image-container2 img:nth-child(3),
+.image-container2 img:nth-child(5) {
+    margin-right: 0;
+}
+
+.image-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.image-container4 img {
+    width: calc(50% - 10px); /* Adjust the width and margins for responsiveness */
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust margin for responsiveness */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .company {
+        width: 90%; /* Adjust the width for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .image-container2 img {
+        width: 100%; /* Single image per row */
+    }
+
+    .image-container2 img:nth-child(1),
+    .image-container2 img:nth-child(2) {
+        width: calc(50% - 10px); /* Two images side by side */
+    }
+}
